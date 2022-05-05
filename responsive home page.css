@@ -1,0 +1,247 @@
+@media screen and (max-width:600px){
+    /* Navigation Bar */
+        nav .name_icon{width:60px;}
+        nav .favourites{width:220px;}
+        nav .favourites span{visibility:hidden;}
+        .searchbox input{display:none;}
+
+    /* Main block */
+        main{margin-left:0px;width:55%;}
+        /* Trending cover songs */
+          .trending_cover_songs{height:100px;}
+          .trending_cover_songs #left_cover,#right_cover{width:50%;height:60px;}
+          .trending_cover_songs #major{height:95px;}
+          #left_cover:hover {height:63px;}
+          #right_cover:hover {height:63px;}
+          #major:hover {height:100px;}
+        /* Latest Release section */
+          .latest_release {height:470px;margin-top:-10px;}
+          .latest_release  p{font-size:24px;}
+          .latest_release .container{margin-top:10px;}
+          .songbox:nth-child(even){margin-left:15px;}
+          .songbox{height:80px;width:300px;margin:15px;}
+          .songbox img{width:100px;}
+          .songbox p span:first-child{font-size:17px;}
+          .songbox p span:last-child{font-size:13px;}
+          .songbox i{visibility:hidden;}
+        /* Popular Artists Section */
+          .popular_artists p{font-size:24px;}
+          .artist_container img{height:100px;width:100px;margin:10px;margin-bottom:20px;}
+          .artist_container p{font-size:18px;}
+          .artist .artist_name{bottom:-10px;left:30px;}
+          .music_station{display:none;}
+        /* Moods section containing images like party road trip */
+          .moods{margin-top:-70px;}
+          .moods img{width:280px;}
+          .moods .party,.road{width:280px;}
+         /* Latest English and Punjabi */
+          .latest p{font-size:24px;}
+          .latest .music_box{display:flex;flex-wrap:wrap;}
+          .latest img{height:100px;width:100px;margin:9px;margin-bottom:20px;}
+          .music_name .item1{bottom:-15px;}
+          .music_box p{font-size:10px;}
+          .music_box p span{font-size:15px;}
+
+        /* Aside Block */
+        aside{width:37%;vertical-align: top;margin-left:8px;margin-right:0px;}
+        /* Queue section enclosing dropdown box with playlist and favourite song option */
+          .queue p:first-child{display:none;}
+          .queue p:nth-child(2){position:relative;top:-20px;left:50%;color:rgb(34, 112, 112);display:inline-block;font-size:24px;}
+          .dropdown li{font-size:15px;}
+          #play:target{left:70%;}
+        /* Playlist in aside section */
+          .playlist{margin-top:-40px;grid-template-rows: repeat(10,50px);margin-left:5px;}
+        /* Each song box in playlist section */
+          .song1{position:relative;right:-5px;}
+          .song1 img{height:50px;width:22%;}
+          .song1 span{display:none;}
+          .song1 p span:first-child{display:inline-block;left:35%;top: 20%;font-size:15px;}
+          .song1 p span:last-child{display:inline-block;left:35%;top:60%;font-size:12px;}
+         
+         /* Bottom fixed current playing songbox */
+        
+        /* part containing current song photo and description */
+          .music .photo {width:35%;margin-left: 10px;}
+          .music .photo img{width:50%;}
+          .music .photo p span:first-child{left:55%;}
+          .music .photo p span:last-child{display:none;}
+          .music .photo #first{left: 83%;}
+          .music .photo #second{left:99%;}
+
+        /* part containing controls selection and slider */
+          .gaana{width:45%;left:10%;}
+          #u{left:25%;}
+          #v{left:35%;}
+          #w{left:45%;}
+          #x{left:63%;}
+          #y{left:74%;}
+       
+        /* rightmost part containing volume control as well as display icons */
+          .last{display:none;}
+
+
+    }
+
+
+
+@media screen and (min-width:600px) and (max-width:850px){ 
+    /* Navigation Bar */
+      nav .name_icon{width:60px;}
+      nav .favourites{width:450px;}
+      nav .favourites span{margin-left:100px;}
+      .searchbox input{display:none}
+      .searchbox{width:150px;right:0px;left:-5px;}
+    /* Main Block */
+    main{margin-left:0px;width:60%;}
+    /* Trending cover songs */
+        .trending_cover_songs{height:200px;}
+        .trending_cover_songs #left_cover,#right_cover{width:50%;height:140px;}
+        .trending_cover_songs #major{height:195px;}
+        #left_cover:hover {height:143px;}
+        #right_cover:hover {height:143px;}
+        #major:hover {height:200px;}
+    /* Latest Release section */
+         .latest_release {height:570px;}
+         .songbox img{width:110px;}
+         .songbox:nth-child(even){margin-left:15px;}
+    /* Popular Artists Section */
+         .artist_container img{margin-bottom:20px;}
+         .artist .artist_name{bottom:-10px;}
+         .music_station{display:none;}
+    /* Moods section containing images like party road trip */
+         .moods{margin-top:-70px;}
+    /* Latest English and Punjabi */
+         .latest .music_box{display:flex;flex-wrap:wrap;}
+         .latest img{margin-bottom:25px;height:140px;width:140px;margin-top:17px;}
+         .music_name .item1{bottom:-20px;}
+        
+    /* aside block */
+    aside{width:35%;vertical-align: top;margin-left:5px;margin-right:-5px;}
+         .playlist{grid-template-rows: repeat(10,60px);margin-left:5px;}
+         #play:target{left:73%;}
+         .queue>a{left:98%;}
+
+    /* Each song box in playlist section */
+         .song1 img{height:60px;width:22%;}
+         .song1 span{display:none;}
+         .song1 p span:first-child{display:inline-block;left:35%;top: 20%;font-size:17px;}
+         .song1 p span:last-child{display:inline-block;left:35%;top:55%;font-size:15px;}
+
+    /* bottom music box */
+         .music .photo {width:25%;margin-left:10px;}
+         .music .photo img{width:50%;}
+         .music .photo p span:first-child{left:55%;}
+         .music .photo p span:last-child{display:none;}
+         .music .photo #first{left: 83%;}
+         .music .photo #second{left:99%;}
+
+    /* part containing controls selection and slider */
+        .gaana{width:40%;left:10%;}
+        #u{left:25%;}
+        #v{left:35%;}
+        #w{left:45%;}
+        #x{left:63%;}
+        #y{left:74%;}
+
+    /* last part */
+        #p{left:10%;}
+        #q{left:20%;}
+        #r{left:30%;}
+        #s{left:45px;top:-5px;}
+        .volume{left:40%}
+         
+} 
+
+@media screen and (min-width:850px) and (max-width:1100px){
+    /* Navigation Bar */
+        .favourites{width:330px;}
+        .favourites span{margin-left:100px;}
+        .searchbox input{display:inline-block;}
+        .searchbox{width:500px;right:0px;left:5px;}
+    /* Main block */
+    main{margin-left:10px;width:60%;}
+        .trending_cover_songs{height:300px;}
+        .trending_cover_songs #left_cover,#right_cover{width:50%;height:240px;}
+        .trending_cover_songs #major{height:295px;}
+        #left_cover:hover {height:243px;}
+        #right_cover:hover {height:243px;}
+        #major:hover {height:300px;}
+    /* Latest Release section */
+        .latest_release {height:570px;}
+        .songbox img{width:110px;}
+        .songbox{margin-left:25px;}
+    /* Popular Artists Section */
+        .artist_container img{margin-bottom:30px;}
+        .artist .artist_name{bottom:-10px;}
+        .music_station{display:none;}
+    /* Moods section containing images like party road trip */
+        .moods{margin-top:-70px;}
+        .moods {margin-left:20px;}
+     /* Latest English and Punjabi */
+        .latest .music_box{display:flex;flex-wrap:wrap;}
+        .latest img{margin-bottom:35px;}
+        .music_name .item1{bottom:-15px;}
+
+    /* Aside block */
+    aside{width:35%;vertical-align: top;margin-left:5px;margin-right:-5px;}
+    /* bottom music box */
+        .music .photo {width:25%;margin-left:20px;}
+        .music .photo img{width:35%;}
+        .music .photo p span:first-child{left:40%;}
+        .music .photo p span:last-child{left:40%;}
+        .music .photo #first{left: 80%;}
+        .music .photo #second{left:95%;}
+    /* part containing controls selection and slider */
+        .gaana{width:40%;left:10%;}
+        #u{left:25%;}
+        #v{left:35%;}
+        #w{left:45%;}
+        #x{left:60%;}
+        #y{left:70%;}
+    /* last part */
+        #p{left:10%;}
+        #q{left:19%;}
+        #r{left:27%;}
+        #s{left:52px;top:-5px;}
+        .volume{left:33%}
+}
+
+@media screen and (min-width:1100px) and (max-width:1400px){
+    /* Navigation Bar */
+        .favourites{width:700px;}
+        .searchbox{left:-5px;}
+    /* Main Block */
+    main{margin-left:10px;width:65%;}
+    /* Latest Release section */
+        .latest_release {height:570px;margin-left:25px;}
+        .songbox img{width:110px;}
+        .songbox{width:300px;}
+        .songbox i{display:none;}
+    /* Popular Artists */
+        .popular_artists{margin-top:-250px;width:80%;margin-left:30px;}
+        .artist_container img{margin-bottom:20px;}
+        .artist .artist_name{bottom:-12px;}
+    /* Music station */
+        .music_station{height:300px;width:90%;margin-left:30px;margin-top:-15px;}
+     /* Moods section containing images like party road trip */
+        .moods{margin-left:26px;}
+        .mood_type:nth-child(3){margin-left:20%;}
+     /* Latest English and Punjabi */
+        .latest .music_box{display:flex;flex-wrap:wrap;}
+        .latest img{margin-bottom:35px;}
+        .music_name .item1{bottom:-15px;}
+    /* Aside block */
+     aside{width:30%;margin-right:-25px;}
+     /* bottom music box */
+        .music .photo {width:30%;margin-left:20px;}
+    /* part containing controls selection and slider */
+        #v{left:33%;}
+        #x{left:52%;}
+        #y{left:60%;}
+     /* last part */
+        #p{left:10%;}
+        #q{left:17%;}
+        #r{left:25%;}
+        #s{left:67px;top:-5px;}
+        .volume{left:30%}
+}

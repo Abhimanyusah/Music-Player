@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home page.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="music icon.png" type="image">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="responsive home page.css">
+</head>
+<body>
+    <!-- Navigation Bar
+    It will have fixed position.Clicking on icon or site name in navbar will display a welcome box for user.Focusing on input box will remove all its background icons -->
+    <nav>
+        <div class="name_icon">
+        <a href="#welcome"><img id="b" src="\images\music icon.png"></a></div>
+        <div class="favourites"><a href="#welcome">Ninja<br>Studio</a><span>Favourites</span></div>
+        <a href="#b"><div id="welcome">Welcome to Ninja Studio!!😍🎵</div></a>
+        <div class="searchbox">
+            <input type="text" placeholder="&emsp;&emsp;&emsp;Search" name="search">
+            <i class="fas fa-bell"></i>
+            <img src="\images\download.jfif">
+        </div>
+     </nav><br><br><br><br><br> <!--These br tags are used as navbar is given fixed so without these navbaar overlaps the content of main block-->
+    
+    <!-- Main Section -->
+    <main>
+        <!-- The follwing div contains trending song photos displayed at top of the page.hovering on each photo will display a box shadow and increase its height width which makes seem as it is coming a little out of screen towards user encouraging him to select it -->
+        <div class="trending_cover_songs">
+            <img id="left_cover" src="\images\hh.jfif">
+            <img id="major"src="\images\ap.jpg">
+            <img id="right_cover" src="\images\zindagi.jpg">
+            
+        </div>
+        <br>
+        <!-- The following div contains latest release section.Hovering on each box will leave a shadow behind with a slow movement -->
+        <div class="latest_release">
+            <p>Latest&ensp;Release</p>
+            <div class="container">
+                <div class="songbox"><img src="\images\gill.jpg"><p><span>Amrinder Gill</span><br><span>JAN 5, 2022</span></p><a><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                <div class="songbox"><img src="\images\khaira.jpg"><p><span>Nirat Khaira</span><br><span>DEC 11, 2021</span></p><a><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                <div class="songbox"><img src="\images\khaira.jpg"><p><span>Nirat Khaira</span><br><span>NOV 28, 2021</span></p><a><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+                <div class="songbox"><img src="\images\gill.jpg"><p><span>Amrinder Gill</span><br><span>JAN 10, 2022</span></p><a><i class="fas fa-ellipsis-h"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- The following div contains images of popular artists with their names -->
+        <div class="popular_artists">
+            <p>Popular&ensp;Artists</p>
+            <div class="artist_container">
+                <div class="artist"><img src="\images\gippy.jpg"><div class="artist_name"><p>Gippy</p></div></div>
+                <div class="artist"><img src="\images\jass manak.png"><div class="artist_name"><p>Jass</p></div></div>
+                <div class="artist"><img src="\images\garry.png"><div class="artist_name"><p>Garry</p></div></div>
+                <div class="artist"><img src="\images\maan.jfif"><div class="artist_name"><p>Sharry</p></div></div>
+                <div class="artist"><img src="\images\nimrat.jfif"><div class="artist_name"><p>Nimrat</p></div></div>
+                <div class="artist"><img src="\images\verma.jpg"><div class="artist_name"><p>Parmish</p></div></div>
+           
+         </div></div><br><br><br><br>
+         <!-- The follwing div contains music station consisting of type of songs images like love rock etc. Over here clicking on music station imagw will take to next page i.e. playlists page -->
+        <div class="music_station">
+            <a href="page2.html" target="_blank"><img class="unique" src="music_station.png"></a>
+            <div class="common"><img class="specific_image" src="\images\love.jfif"><div class="love"><p>Love</p></div></div>
+            <div class="common"><img class="specific_image" src="\images\radio.jfif"><div class="love"><p>Retro</p></div></div>
+            <div class="common"><img class="specific_image" src="\images\workout.jpg"><div class="love"><p>Workout</p></div></div>
+            <div class="common"><img class="specific_image" src="\images\rocki.jfif"><div class="love"><p>Rock</p></div></div>
+            <div class="common"><img class="specific_image"  src="\images\chill.jpg"><div class="love"><p>Chill</p></div></div>
+            <div class="common"><img class="specific_image" src="\images\pop.jpg"><div class="love"><p>Pop</p></div></div>
+
+        </div><br><br>
+        <div class="moods">
+            <div class="mood_type"><img src="\images\party.jpg"><div class="party"><p>Party</p></div></div>
+            <div class="mood_type"><img src="\images\electronics.jpg"><div class="party"><p>Electronic</p></div></div>
+            <div class="mood_type"><img src="\images\road.jpg"><div class="road"><p>Road Trip</p></div></div>
+        </div><br><br><br>
+
+        <!-- The following div contains latest english songs section consisting of their cover images which are little rounded off,song names and their release dates-->
+        <div class="latest">
+            <p>Latest&ensp;English</p>
+            <div class="music_box">
+            <div class="music_name"><img src="\images\english1.jpg"><div class="item1"><p><span>Arcouse</span><br>Dec 11,2021</p></div></div>
+            <div class="music_name"><img src="\images\inter.png"><div class="item1"><p><span>Move on</span><br>Jan 5,2022</p></div></div>
+            <div class="music_name"><img src="\images\english3.jfif"><div class="item1"><p><span>Obsession</span><br>Aug 16,2021</p></div></div>
+            <div class="music_name"><img src="\images\english4.jpg"><div class="item1"><p><span>Better</span><br>Nov 3,2021</p></div></div>
+            <div class="music_name"><img src="\images\english6.jpg"><div class="item1"><p><span>Amore</span><br>Oct 12,2021</p></div></div>
+            <div class="music_name"><img src="\images\english7.jpg"><div class="item1"><p><span>Vibe</span><br>Jan 1,2022</p></div></div>
+        </div>
+        </div><br><br><br>
+
+        <!-- The following div contains latest punjabi songs section consisting of their cover images which are little rounded off,song names and their release dates-->
+        <div class="latest" id="gaane">
+            <p>Latest&ensp;Punjabi</p>
+            <div class="music_box">
+                <div class="music_name"><img src="\images\insane.jpg"><div class="item1"><p><span>Insane</span><br>Dec 11,2021</p></div></div>
+                <div class="music_name"><img src="\images\gutt.jpg"><div class="item1"><p><span>Gutt</span><br>Dec 11,2021</p></div></div>
+                <div class="music_name"><img src="\images\jattiye.jpg"><div class="item1"><p><span>Jattiye</span><br>Dec 11,2021</p></div></div>
+                <div class="music_name"><img src="\images\jaan.jpg"><div class="item1"><p><span>Jaan</span><br>Dec 11,2021</p></div></div>
+                <div class="music_name"><img src="\images\goat.jpg"><div class="item1"><p><span>Goat</span><br>Dec 11,2021</p></div></div>
+                <div class="music_name"><img src="\images\excuses.jpg"><div class="item1"><p><span>Excuses</span><br>Dec 11,2021</p></div></div>
+            
+            
+            </div>
+        </div>
+         <br><br><br><br><br><br><br> <!--These break tags are added as bottom songbox is fixed so it was overlapping content of main without these -->
+    </main>
+
+<!-- Aside section -->
+    <aside>
+        <!-- This div contains queue heading and queue with downward icon. Clicking on that icon will display a dropdown box.This box will contain an option named playlist clicking on which will take us to the next page i.e. playlists page. Second option is of Favourite songs clicking on which will take us to latest punjabi section. The last option is close which will help us to close the dropdown box.-->
+        <div class="queue">
+        <p>Queue</p>
+        <p>Queue</p>
+    <a href="#play"><i class="fas fa-caret-down" ></i></a>
+            <div id="play" class="dropdown">
+                <ul type="none">
+                <li><a href="page2.html" target="_blank">Playlists..🎵</a></li>
+                <hr>
+                <li><a href="#gaane">Favourite Songs..💖</a></li>
+                <hr>
+                <li><a href="#" style="color:red">Close..❌</a></li>
+            </ul>
+            </div>
+        </div><br>
+        <!-- The following div will contain all the playlist songs. Hovering on each song will change cursor to hand pointer,provide a little motionary movement to it along with color changing animation on heart icon -->
+        <div class="playlist">
+           
+                <div class="song1"><span>01</span><img src="\images\Chan Vekhya.jpg"><p><span>Chan Vekhya</span><br><span>Harnoor</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>02</span><img src="\images\Hello.jpg"><p><span>Hello</span><br><span>Nirvair Pannu</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>03</span><img src="\images\moonlight.jpg"><p><span>Moonlight</span><br><span>Harnoor</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>04</span><img src="\images\teri.jpg"><p><span>Teri Ah</span><br><span>AP Dhillon</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>05</span><img src="\images\parshawan.jpg"><p><span>Parshawan</span><br><span>Harnoor</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>06</span><img src="\images\gutt.jpg"><p><span>Gutt</span><br><span>Arjan Dhillon</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>07</span><img src="\images\vac.jpg"><p><span>Vacation</span><br><span>Nirvair Pannu</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>08</span><img src="\images\bai.jpg"><p><span>Bai Bai</span><br><span>Jass Manak</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>09</span><img src="\images\daru.jpg"><p><span>Daru Sasti</span><br><span>Arjan Dhillon</span></p><i class="far fa-heart"></i></div>
+                <div class="song1"><span>10</span><img src="\images\gun.jpg"><p><span>German Gun</span><br><span>Amrit Maan</span></p><i class="far fa-heart"></i></div>
+            
+
+        </div>
+    </aside>
+
+    <!-- The following div contains bottom music box. Its position is sticky.It is divided into three sections.First section contains song description along with image. Second part contains song controls along with the song slider.The last but not least part contains volume controls along with display icons -->
+    <div class="music">
+        <div class="photo"><img src="\images\parshawan.jpg"><p><span>Hello</span><br><span>Nirvair Pannu</span></p>
+            <i id="first" class="far fa-heart"></i><i id="second" class="fas fa-ban"></i></div>
+        <div class="gaana">
+            <div class="btn">
+                <i id="u"class="fas fa-cut"></i>
+                <i id="v"class="fas fa-backward"></i>
+                <i id="w" class="fas fa-pause"></i>
+                <i id="x" class="fas fa-forward"></i>
+                <i id="y" class="fas fa-sync-alt"></i>
+            </div>
+            <span>3:39</span>
+            <div class="playing">
+                <input type="range" min="0" max="100" class="slider">
+            </div>
+            <span>4:44</span>
+            <div class="last">
+                <i id="p" class="fas fa-bars"></i>
+                <i id="q" class="fas fa-desktop"></i>
+                <i id="r" class="fas fa-volume-up"></i>
+                <div class="volume">
+                    <div class="up"><i class="fas fa-circle"></i></div>
+                <i id="s" class="fas fa-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

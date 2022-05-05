@@ -1,0 +1,155 @@
+        body{background-color: rgb(4, 4, 41);}
+
+/* Navigation bar */
+        nav{height: 80px;width:100%;background-color:rgb(4, 4, 41);color:white;display:flex;position:fixed;z-index: 2;top:0px;}
+        /* Icon and site name */
+        .name_icon{width:80px;}
+        .name_icon img{height:60px;border-radius:50%;display:inline-block; margin:10px 5px 20px 10px;}
+        /* Welcome box it will be displayed on clicking on icon and site name*/
+        #welcome{position:absolute;background-color:skyblue;top:75px;font-family:cursive;left:80px;height:30px;width:370px;padding:15px 10px;font-size:24px;box-shadow:0px 0px 2px 4px rgb(111, 111, 199);border-radius:25px;font-weight:600px;color:black;visibility:hidden;}
+        nav a{text-decoration: none;color:white;}
+        #welcome:target{visibility:visible;}
+        #b:target+#welcome{visibility:hidden;}
+        /* Favorites in navbar */
+        .favourites{font-size:28px;margin:auto 10px;width:1100px;}
+        .favourites span{margin-left:200px;position:relative;top:-20px;font-size:24px;}
+        .searchbox{width:600px;position:relative;}
+        .searchbox input{background-image:url("search.png"),url("mic.png");background-size: 30px,25px;background-repeat:no-repeat;background-color: aliceblue;background-position:left,right;border-radius:10px;position:relative;top:-27px;height:25px;width:300px;font-size:15px;}
+        /* Input Searchobox */
+        .searchbox i{font-size:25px;margin-left:20px;color:white;position:relative;top:-20px;left:15px;}
+        .searchbox img{border-radius:50%;height: 70px;width:80px;position:relative;top:4px;left:40px;}
+        input:focus{background-image: none;}
+
+/* Main Block */
+        main{width:65%;background-color:rgb(4, 4, 41);display:inline-block;margin-left:80px;}
+        /* Trending songs cover photos */
+        .trending_cover_songs{width:100%;background-color:rgb(4, 4, 41);height:370px;position:relative;display:flex;top:20px;}
+        .trending_cover_songs #left_cover,#right_cover{width:50%;height:312px;}
+        .trending_cover_songs #major{width:60%;height:365px;position:absolute;left:20%;;top:-25px;}
+        #left_cover:hover {box-shadow:0px 0px 2px 4px whitesmoke;height:316px;width:52%;}
+        #right_cover:hover {box-shadow:0px 0px 2px 4px whitesmoke;height:316px;width:52%;}
+        #major:hover {box-shadow:0px 0px 2px 4px whitesmoke;height:370px;width:63%;}
+
+         /* Latest Release section */
+        .latest_release {background-color:rgb(4, 4, 41);width: 100%;height:350px;}
+        .latest_release  p{margin:10px;color:white;font-weight:bold;font-size:30px;margin-bottom:-10px;}
+        .latest_release .container{display:flex;flex-wrap:wrap;margin-top:20px;}
+        .songbox:nth-child(even){margin-left:30px;}
+        .songbox{height:100px;width:370px;margin:15px;position:relative;}
+        .songbox img{height:100%;width:120px;}
+        .songbox p{color:white;display:inline-block;position:relative;top:-30px;left:22px;}
+        .songbox p span:first-child{font-size:18px;font-weight:600px;}
+        .songbox p span:last-child{font-size:14px;margin-left:10px;margin-top:-10px;font-weight:300px;color:grey;}
+        .songbox i{color:grey;font-size:14px;direction:rtl;position:relative;top:-82%;left:20%;}
+        .songbox:hover{box-shadow:0px 0px 2px 5px rgb(139, 139, 173);transform:translate3D(10px,0px,30px);transition:transform 0.3s;}
+       
+        
+         /* Popular Artists Section */
+        .popular_artists{width:100%;background-color:rgb(4, 4, 41);}
+        .popular_artists p{margin:10px;color:white;font-weight:bold;font-size:30px;}
+        .popular_artists .artist_container{display:flex;flex-wrap:wrap;margin-top:20px;}
+        .artist_container img{border-radius:50%;height:145px;width:145px;display:inline-block;margin:8px;}
+        .artist_container p{display:inline-block;font-size:20px;font-weight:10px;}
+        .artist{position:relative;display:inline-block;}
+        .artist .artist_name{position:absolute;bottom:-30px;display:inline-block;left:45px;}
+
+        /* Music Station section containing type of songs like love pop rock etc. */
+        .music_station{background-color: rgb(20, 11, 77);height:180px;}
+        .music_station .unique{height:160px;width:140px;margin-left:20px;margin-top:12px;display:inline-block;}
+        .specific_image{border-radius:50%;height:115px;width:115px;margin:8px;}
+        .common{position:relative; display:inline-block;top:-16px;left:-2px;}
+        .common .love{background-color:#1B98E040;display:inline-block;position:absolute;border-radius:50%;height:115px;width:115px;top:8px;left:8px;}
+        .music_station p{display:inline-block;margin-top:50px;margin-left:45px;font-size: 18px;color:white;}
+ 
+        /* Moods section containing images like party road trip */
+        .moods{display:flex;flex-wrap: wrap;}
+        .moods img{display:inline-block;margin:7px;height:200px;width:310px;}
+        .mood_type{display:inline-block;position:relative;}
+        .mood_type .party,.road{background-color:#1B98E01A;display:inline-block;position:absolute;height:200px;width:310px;top:8px;left:8px;}
+        .mood_type .road{background-color: #1B98E033;}
+        .moods p{display:inline-block;margin-top:50px;margin-left:100px;font-size: 20px;color:white;}
+
+        /* Latest English and Latest Punjabi Section */
+        .latest{width:100%;background-color:rgb(4, 4, 41);}
+        .latest p{margin:10px;color:white;font-weight:bold;font-size:30px;}
+        .latest .music_box{display:flex;}
+        .latest img{height:145px;width:145px;border-radius:10px;margin:9px;}
+        .music_name{position:relative;display:inline-block;}
+        .music_name .item1{display:inline-block;position:absolute;bottom:-40px;left:18px;}
+        .music_box p{color:grey;font-size:16px;font-weight:0px;font-family: 'Courier New', Courier, monospace;}
+        .music_box p span{color:white;font-size:18px;font-weight:0px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri8;}
+
+/* Aside Block */
+        aside{display:inline-block;width:24%;vertical-align: top;margin-left:35px;margin-right:7px;}
+        /* Queue section enclosing dropdown box with playlist and favourite song option */
+        /* Clicking here on playlist option will  take us to next playlist page*/
+        .queue{position: relative;}
+        .queue p:first-child{margin-top:-15px;color:white;font-weight:bold;font-size:30px;display:inline-block;}
+        .queue p:nth-child(2){position:absolute;top:-55%;left:70%;color:rgb(34, 112, 112);display:inline-block;font-size:24px;}
+        .queue>a{position:absolute;left:92%;top:6px;color:rgb(34, 112, 112);}
+        .dropdown{background-color:white;position:absolute;top:30px;left:60%;z-index:2;visibility:hidden;}
+        .dropdown li a{color:black;text-decoration:none;}
+        .dropdown li{margin-left:-30px;padding-right:8px;}
+        .dropdown hr{margin-left: -40px;}
+        #play:target{visibility:visible;position:fixed;top:130px;left:85%;}
+        
+        /* Playlist in aside section */
+        .playlist{display:grid;height:500px;grid-template-columns: 100%;overflow:scroll;grid-template-rows: repeat(10,65px);grid-gap:1rem;margin-left:5px;position:relative;}
+        /* Each song box in playlist section */
+        .song1{position:relative;}
+        .song1 img{height:65px;width:22%;margin-left:15px;}
+        .song1 span{color:grey;position:relative;top:-40%;left:2px;}
+        .song1 p span:first-child{color:white;position:absolute;left:36%;top: 20%;font-size:17px;}
+        .song1 p span:last-child{color:grey;position:absolute;left:36%;top:54%;font-size:12px;}
+        .song1 i{color:grey;position:absolute;left:90%;top:30%;}
+        .song1:hover{transform-style: preserve-3d;transform:translate3d(7px,3px,10px);}
+        /* Adding animation to heart icon in every songbox */
+        @keyframes glowing-heart {0%{color:yellow;}50%{color:orangered;}100%{color:red;}}
+        .song1:hover i{animation-name: glowing-heart;animation-iteration-count: infinite;animation-direction: alternate;    animation-duration: 1s;}
+        /* making playlist a little scroll able */
+        .playlist::-webkit-scrollbar-thumb{cursor: pointer;}
+        .playlist::-webkit-scrollbar{display:none;}
+
+/* Bottom fixed current playing songbox */
+        .music{height:70px;position:fixed;bottom:0px;background-color:rgb(22, 22, 66);width:100%;left:0px;display:flex;flex-wrap:wrap;}
+        /* part containing current song photo and description */
+        .music .photo {position:relative;width:25%;height:100%;margin-left: 80px;}
+        .music .photo img{height:100%;width:20%;}
+        .music .photo p span:first-child{color:white;position:absolute;left:25%;top: 18%;font-size:23px;}
+        .music .photo p span:last-child{color:grey;position:absolute;left:25%;top:57%;font-size:15px;font-family:cursive;}
+        .music .photo i{color:grey;font-size:20px;margin:10px;position:absolute;top:7px;}
+        .music .photo #first{left:50%;}
+        .music .photo #second{left:58%;}
+
+        /* part containing controls selection and slider */
+        .gaana{width:45%;height:100%;position:relative;}
+        .btn{position:relative;}
+        .btn+span{color:grey;position:relative;top:38px;left:-8px;}
+        .playing+span{color:grey;position:relative;left:81%;top:38px;}
+        .btn i{color:grey;position:absolute;top:14px;font-size:15px;}
+        #u{left:25%;}
+        #v{left:35%;}
+        #w{left:41%;color:white;font-size:13px;border:1px solid grey;border-radius:50%;padding:8px;top:5px;}
+        #w:hover{cursor:pointer;}
+        #x{left:49%;}
+        #y{left:60%;}
+        .playing{background-color:white;width:80%;height:6px;position:absolute;top:45px;left:32px;border-radius:500px;}
+        .playing .slider{width:100%;height:6px;outline:none;position:relative;left:-4px;top:-8px;}
+
+        /* rightmost part containing volume control as well as display icons */
+        .last {width:100%;height:100%;position:relative;left:100%;}
+        .last i{color:grey;position:absolute;top:15px;}
+        #p{left:10%;}
+        #q{left:15%;}
+        #r{left:20%;}
+        #s{left:100px;top:-5px;}
+        .volume{background-color:grey;width:12%;height:6px;position:absolute;top:18px;left:24%;border-radius:50px;}
+        .up{background-color:green;position:absolute;top:0px;width:60%;height:6px;border-radius:50px;}
+        .up i{margin-left:95%;color:white;position:relative;top:-7px;font-size:10px;}
+
+       /* Making aside fixed while scrolling main section */
+        main:hover+aside{position:fixed;}
+
+
+
+        

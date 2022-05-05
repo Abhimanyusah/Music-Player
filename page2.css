@@ -1,0 +1,130 @@
+body{background-color: rgb(4, 4, 41);}
+
+/* Navigation Bar */
+        nav{height: 80px;width:100%;background-color:rgb(4, 4, 41);color:white;display:flex;position:fixed;z-index: 2;top:0px;}
+
+        /* Name icon and site name */
+        .name_icon{width:80px;}
+        nav a{text-decoration: none;color:white;}
+        .name_icon img{height:60px;border-radius:50%;display:inline-block; margin:10px 5px 20px 10px;}
+        
+        /* Welcome box */
+        #welcome{position:absolute;background-color:pink;top:75px;left:80px;font-family:cursive;height:30px;width:370px;padding:15px 10px;font-size:24px;box-shadow:0px 0px 2px 4px white;border-radius:25px;font-weight:600px;color:black;visibility:hidden;}
+        #welcome:target{visibility:visible;}
+        #b:target+#welcome{visibility:hidden;}
+
+        /* favourites written */
+        .favourites{font-size:28px;margin:auto 10px;width:1100px;}
+        .favourites span{margin-left:200px;position:relative;top:-20px;font-size:24px;}
+
+        /* Input searchbox */
+        .searchbox{width:600px;position:relative;}
+        .searchbox input{background-image:url("search.png"),url("mic.png") ;background-size: 30px,25px;background-repeat:no-repeat;background-color: aliceblue;background-position:left,right;border-radius:10px;position:relative;top:-27px;height:25px;width:300px;font-size:15px;}
+        .searchbox i{font-size:25px;margin-left:20px;color:white;position:relative;top:-20px;left:15px;}
+        .searchbox img{border-radius:50%;height: 70px;width:80px;position:relative;top:4px;left:40px;}
+        input:focus{background-image: none;}
+
+/* Main block */
+        main{width:60%;background-color:rgb(4, 4, 41);display:inline-block;margin-left:80px;margin-top:100px;}
+
+        /* Cold play band div */
+        .trending_cover_songs{width:100%;background-color:rgb(20, 11, 77);height:390px;position:relative;display:flex;top:20px;}
+        .trending_cover_songs img{width:40%;}
+        /* description paragraph heading and followers of coldplay */
+        .trending_cover_songs .description{height:380px;width:600px;}
+        .description h1{color:white;margin-top:60px;margin-left:20px;}
+        .description h1+span{position:relative;top:-20px;margin-left: 22px;color:grey;}
+        .description #followers{color:grey;position:relative;left:60%;top:-12%;}
+        .description p{margin-left:22px;margin-top:-12px;margin-right:20px;color:grey;line-height:22px;}
+        /* play all button, albums tracks and follow link */
+        .description button{color:white;padding:10px 20px;margin-left:20px;margin-top:30px;background:linear-gradient(to right,rgb(53, 53, 139),rgb(129, 41, 129) 50%);width:152px;font-size:18px;}
+        .description a{color:grey;margin-left:50px;}
+        .description button:focus{box-shadow:0px 0px 2px 2px white;}
+        #albums{color:grey;margin-left:20px;position:relative;top:7px;}
+
+
+        /* Major playlist songs just below coldplay div */
+        .playlist{width:100%;display:grid;grid-template-rows:repeat(6,70px);grid-template-columns:100%;grid-gap:15px;}
+        .playlist_item{position:relative;background-color: #1B98E01A;}
+        .playlist_item img{height:70px;width:10%;margin-left:15px;}
+        .playlist_item span{color:grey;position:relative;top:-40%;left:6px;}
+        .playlist_item p span:first-child{color:white;position:absolute;left:15%;top: 19%;font-size:20px;}
+        .playlist_item p span:last-child{color:grey;position:absolute;left:15%;top:52%;font-size:16px;}
+        #heart{color:grey;position:absolute;left:90%;top:40%;font-size:18px;}
+        #add{color:grey;position:absolute;left:95%;top:40%;font-size:18px;}
+        .playlist_item:hover{transform-style: preserve-3d;transform:translate3d(7px,3px,10px);cursor:pointer;}
+        @keyframes glowing-heart {0%{color:yellow;}50%{color:orangered;}100%{color:red;}}
+        .playlist_item:hover i{animation-name: glowing-heart;animation-iteration-count: infinite;animation-direction: alternate;animation-duration: 1s;}
+
+
+/* Aside block */
+        aside{display:inline-block;width:25%;vertical-align: top;margin-left:30px;margin-right:7px;margin-top:120px;}
+        .similar_artists{overflow:scroll;height:600px;}
+        .similar_artists::-webkit-scrollbar{display:none;}
+
+        /* Similar Artists Section */
+        .artists_content{display:grid;grid-template-columns:100%;grid-template-rows: repeat(3,90px);grid-gap:15px;margin-top:-3px;}
+        .heading p{margin:10px;color:white;font-weight:bold;font-size:30px;display:inline-block;}
+        .heading span{color:grey;margin-left:80px;text-decoration: underline;cursor: pointer;}
+        .artist{position:relative;background-color:#1B98E01A;}
+        .artist img{height:90px;width:25%;}
+        .artist p span:first-child{color:white;position:absolute;left:30%;top: 24%;font-size:17px;}
+        .artist p span:last-child{color:grey;position:absolute;left:30%;top:50%;font-size:15px;}
+        .artist i{color:grey;position:absolute;left:90%;top:15%;}
+        .artist:hover{transform-style: preserve-3d;transform:translate3d(5px,0px,5px);cursor:pointer;}
+        .artist:active{box-shadow:0px 0px 2px 3px rgb(182, 136, 181);}
+        #duration{color:grey;position:relative;top:-118px;left:88%;font-size:13px;}
+
+        /* Recently Played Section */
+        .recently_played {margin-top:25px;}
+        .played_content{display:grid;grid-template-rows: 100%;grid-template-rows: repeat(3,65px);grid-gap:15px;margin-top:15px;}
+        .song{position:relative;background-color: #1B98E01A;}
+        .song img{height:65px;width:20%;margin-left:8px;}
+        .song span{color:grey;position:relative;top:-40%;left:4px;}
+        .song p span:first-child{color:white;position:absolute;left:32%;top: 20%;font-size:17px;}
+        .song p span:last-child{color:grey;position:absolute;left:32%;top:53%;font-size:12px;}
+        .song i{color:grey;position:absolute;left:90%;top:30%;}
+        .song:hover{transform-style: preserve-3d;transform:translate3d(5px,3px,10px);box-shadow:0px 0px 2px 3px rgb(138, 100, 100);}
+        .song:hover i{animation-name: glowing-heart;animation-iteration-count: infinite;animation-direction: alternate;animation-duration: 1s;}
+
+        
+        /* bottom music box */
+        .music{height:70px;position:fixed;bottom:0px;background-color:rgb(22, 22, 66);width:100%;left:0px;display:flex;flex-wrap:wrap;}
+        /*Song Description part */
+        .music .photo {position:relative;width:25%;height:100%;margin-left: 80px;}
+        .music .photo img{height:100%;width:20%;}
+        .music .photo p span:first-child{color:white;position:absolute;left:25%;top: 18%;font-size:23px;}
+        .music .photo p span:last-child{color:grey;position:absolute;left:25%;top:57%;font-size:15px;font-family:cursive;}
+        .music .photo i{color:grey;font-size:20px;margin:10px;position:absolute;top:7px;}
+        .music .photo #first{left:50%;}
+        .music .photo #second{left:58%;}
+
+        /* Song Controls section with all control icons along with  still timeline slider this time i.e. a different concept used in comparison to first page where moving slider was there */
+        .gaana{width:45%;height:100%;position:relative;}
+        .btn{position:relative;}
+        .btn i{color:grey;position:absolute;top:14px;font-size:15px;}
+        .btn+span{color:grey;position:relative;top:38px;left:-8px;}
+        .playing+span{color:grey;position:relative;left:81%;top:38px;}
+        #u{left:25%;}
+        #v{left:35%;}
+        #w{left:41%;color:white;font-size:13px;border:1px solid grey;border-radius:50%;padding:8px;top:5px;}
+        #w:hover{cursor:pointer;}
+        #x{left:49%;}
+        #y{left:60%;}
+        .playing{background-color:grey;width:80%;height:6px;position:absolute;top:45px;left:30px;border-radius:500px;}
+        .timeline{background-color:green;position:absolute;top:0px;width:65%;height:6px;border-radius:500px;}
+        .timeline i{margin-left:98%;color:white;position:relative;top:-80%;font-size:17px;}
+
+        /* Last part containing volume controls and display icons */
+        .last {width:100%;height:100%;position:relative;left:100%;}
+        .last i{color:grey;position:absolute;top:15px;}
+        #p{left:10%;}
+        #q{left:15%;}
+        #r{left:20%;}
+        #s{left:100px;top:-5px;}
+        .volume{background-color:grey;width:12%;height:6px;position:absolute;top:18px;left:24%;border-radius:50px;}
+        .up{background-color:green;position:absolute;top:0px;width:60%;height:6px;border-radius:50px;}
+        .up i{margin-left:95%;color:white;position:relative;top:-7px;font-size:10px;}
+
+       /* making aside fixed while scrolling main */
+        main:hover+aside{position:fixed;}
